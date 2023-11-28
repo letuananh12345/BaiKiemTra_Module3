@@ -12,8 +12,9 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/products">Back</a>
+
 <form method="post">
+
     <h3>Add new product</h3>
     <label>Name</label>
     <br>
@@ -44,8 +45,8 @@
         </c:forEach>
     </select>
     <br>
-    <br>
     <button>Create</button>
+    |<a href="/products">Back</a>
 
 </form>
 

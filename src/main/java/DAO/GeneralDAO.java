@@ -15,4 +15,6 @@ public interface GeneralDAO<T> {
     void edit(int id, T t) throws SQLException, ClassNotFoundException;
 
     void delete(int id) throws SQLException, ClassNotFoundException;
+
+
 }

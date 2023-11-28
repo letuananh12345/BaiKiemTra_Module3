@@ -1,7 +1,6 @@
 package DAO;
 
 import model.Category;
-import model.Product;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -53,4 +52,5 @@ public class CategoryDAO implements GeneralDAO<Category> {
     public void delete(int id) throws SQLException, ClassNotFoundException {
 
     }
+
 }

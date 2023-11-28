@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductDAO implements GeneralDAO<Product> {
+
+
     private SQLConnection sqlConnection = new SQLConnection();
     private final String FIND_ALL = "SELECT * FROM product;";
     private final String CREATE = "INSERT INTO product(name, price, quantity, color, description, categoryId) values (?,?,?,?,?,?);";
@@ -17,7 +19,6 @@ public class ProductDAO implements GeneralDAO<Product> {
     private final String UPDATE = "Update product set name = ?, price = ?, quantity = ?, color = ?, description =?, categoryId =? where id =?;";
     private final String DELETE = "DELETE from product where id =?;";
     private final String FIND_BY_NAME = "SELECT * FROM product where name like ?;";
-
 
     @Override
     public List<Product> findAll() throws SQLException, ClassNotFoundException {
@@ -40,7 +41,7 @@ public class ProductDAO implements GeneralDAO<Product> {
     }
 
         @Override
-        public Product findById ( int id) throws SQLException, ClassNotFoundException {
+        public Product findById (int id) throws SQLException, ClassNotFoundException {
             Connection connection = sqlConnection.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(FIND_BY_ID);
             preparedStatement.setInt(1,id);
@@ -111,5 +112,7 @@ public class ProductDAO implements GeneralDAO<Product> {
             preparedStatement.setInt(1,id);
             preparedStatement.execute();
         }
+
+
     }
 

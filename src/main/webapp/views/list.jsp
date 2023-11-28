@@ -41,7 +41,8 @@
                     <c:if test="${product.categoryId == category.id}">
                         ${category.name}
                     </c:if>
-                </c:forEach> </td>
+                </c:forEach>
+                </td>
                 <td><a style="color: blue" href="/products?action=edit&id=${product.id}">Edit</a>|<a style="color: crimson" href="/products?action=delete&id=${product.id}">Delete</a></td>
             </tr>
         </c:forEach>

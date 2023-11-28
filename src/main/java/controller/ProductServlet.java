@@ -5,6 +5,7 @@ import DAO.ProductDAO;
 import model.Category;
 import model.Product;
 
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -41,9 +42,11 @@ public class ProductServlet extends HttpServlet {
                 default:
                     findAll(request, response);
             }
+
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
+
     }
 
     @Override
@@ -51,6 +54,7 @@ public class ProductServlet extends HttpServlet {
         String action = request.getParameter("action");
         if (action == null) {
             action = "";
+
         }
         try {
             switch (action) {

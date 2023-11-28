@@ -1,13 +1,13 @@
-model/Category.java
- model.Category
-DAO/GeneralDAO.java
- DAO.GeneralDAO
-DAO/SQLConnection.java
- DAO.SQLConnection
-DAO/CategoryDAO.java
- DAO.CategoryDAO
 model/Product.java
  model.Product
+model/Category.java
+ model.Category
+DAO/SQLConnection.java
+ DAO.SQLConnection
+DAO/GeneralDAO.java
+ DAO.GeneralDAO
+DAO/CategoryDAO.java
+ DAO.CategoryDAO
 DAO/ProductDAO.java
  DAO.ProductDAO
 controller/ProductServlet.java
